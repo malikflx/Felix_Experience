@@ -1,0 +1,175 @@
+/****BASE STYLES****/
+body {
+  font-family: 'Red Hat Dispaly', sans-serif;
+  color: #2b2b2b;
+}
+
+#about, #profile-cards, #contact {
+  height: 33.33333333333%;
+}
+
+/*span {
+  text-shadow: 3px 2px #7F7F7F;
+}*/
+
+/****GRID****/
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 50%;
+  float: left;
+}
+
+.third-width {
+  width: 33.33333333333%;
+  float: left;
+}
+
+/****BANNER STYLES****/
+header .full-width {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/colton-duke-brooklyn-bridge.jpg);
+  background-size: 100% 100%;
+  height: 400px;
+  width: 100%;
+  color: #FFF;
+  overflow: auto;
+
+  nav {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  li {
+    padding: 30px;
+  }
+
+  a {
+    color: #FFF;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 50px;
+    padding-left: 60px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: normal;
+  }
+
+  h2 {
+    display: inline-block;
+    padding-left: 60px;
+    margin-top: 75px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 35px;
+  }
+
+}
+
+
+
+/****ABOUT****/
+#about .full-width{
+  padding: 80px 0;
+
+  h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-left: 50px;
+  }
+
+  p {
+    font-size: 21px;
+    color: #7F7F7F;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/****PROFILE-CARDS****/
+
+#profile-cards {
+  background-color: #FDCEAA;
+  //color: #FFF;
+
+  .full-width {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+
+    @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
+      //background: red;
+      .full-width{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+  }
+
+  .third-width {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
+        background: red;
+        width: 33.33333333333%
+    }
+  }
+
+  h3 {
+    font-family: 'Lora', sans-serif;
+    text-align: center;
+  }
+}
+
+
+
+
+/****FOOTER****/
+#contact {
+
+    .family-photo {
+      width: 80%;
+      height: auto;
+      margin: 80px;
+      border-radius: 5%;
+      box-shadow: -10px 5px 5px #A9A9A9;
+    }
+ }
+
+#contact-info {
+  padding-left: 50px;
+  padding-top: 80px;
+
+  h2 {
+    font-family: 'Lora', serif;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-left: -50px;
+  }
+
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  img {
+    width: 30px;
+    height: auto;
+  }
+}
