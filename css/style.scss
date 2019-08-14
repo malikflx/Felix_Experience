@@ -238,18 +238,10 @@ header .full-width {
     flex-direction: column;
     padding-top: 10%;
     padding-left: 10%;
-    //padding-right: 10%;
+    padding-right: 10%;
     padding-bottom: 10%;
     //justify-content: center;
     //align-items: center;
-
-    @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
-      //background: red;
-      .full-width{
-        display: flex;
-        flex-direction: row;
-      }
-    }
 
   }
 
@@ -259,16 +251,31 @@ header .full-width {
     //padding-left: 10%;
     //padding-right: 10%;
 
-    @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
-        background: red;
-        width: 33.33333333333%
-    }
   }
 
   h3 {
     font-family: 'Lora', sans-serif;
     text-align: center;
   }
+
+
+      @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
+        .full-width {
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 5%;
+          padding-top: 5%;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .third-width{
+          width: 80%;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+      }
 }
 
 
